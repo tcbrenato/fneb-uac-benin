@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNEB - Fédération Nationale des Étudiants du Bénin</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        /* Header */
+        .navbar {
+            background-color: white;
+        }
+        .navbar-nav .nav-link {
+            color: #034078; /* Bleu pour le texte */
+        }
+        .navbar-brand img {
+            max-height: 50px;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #002d57; /* Un bleu plus foncé au survol */
+        }
+        /* Section General */
+        .section-bg {
+            background-color: rgb(3, 64, 120);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./Asset/Logo FNEB.png" alt="Logo FNEB">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">La FNEB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="actualités.html">Actualités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evenements.html">Événements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ressources.html">Ressources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Hero Accueil -->
+<section class="hero-section section-bg d-flex align-items-center" style="background-color: rgb(3, 64, 120);">
+    <div class="container text-center text-md-start d-md-flex align-items-center justify-content-between">
+        <div class="hero-text">
+            <h1 class="text-white">Bienvenue à la Fédération Nationale des Étudiants du Bénin</h1>
+            <p class="text-white">Nous sommes ici pour représenter et défendre les intérêts des étudiants du Bénin.</p>
+        </div>
+        <div class="hero-image mt-4 mt-md-0">
+            <img src="./Asset/logo avec fond  blanc FNEB.jpg" alt="Image Hero FNEB" class="img-fluid">
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Section Hero Styling */
+    .hero-section {
+        padding: 60px 0;
+    }
+    .hero-text h1 {
+        font-size: 2.5rem; /* Ajusté pour mobile */
+        line-height: 1.2;
+        color: white;
+    }
+    .hero-text p {
+        font-size: 1.2rem; /* Ajusté pour mobile */
+        color: white;
+    }
+    /* Hero Image */
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px; /* Optionnel pour un effet plus doux */
+    }
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+        .container {
+            text-align: center;
+        }
+        .hero-text h1 {
+            font-size: 2rem;
+        }
+        .hero-text p {
+            font-size: 1rem;
+        }
+        .hero-image {
+            margin-top: 20px;
+        }
+    }
+</style>
+
+
+    <!-- Section Identité et Objectifs -->
+<section class="identity-section section-bg py-5">
+    <div class="container text-center">
+        <h2 class="text-white mb-4">Qui sommes-nous ?</h2>
+        <p class="text-white mb-4">
+            La Fédération Nationale des Étudiants du Bénin (FNEB) est une organisation dédiée à la représentation et à la défense des droits des étudiants. 
+            Nous œuvrons pour un environnement académique juste et équitable, en promouvant les intérêts des étudiants à tous les niveaux.
+        </p>
+        <h3 class="text-white mb-3">Nos Objectifs :</h3>
+        <ul class="list-unstyled text-white mb-4">
+            <li>- Défendre les intérêts des étudiants auprès des institutions.</li>
+            <li>- Promouvoir l’accès à l’éducation pour tous.</li>
+            <li>- Renforcer la solidarité entre les étudiants à travers des actions communautaires.</li>
+        </ul>
+        <a href="#" class="btn btn-success">Rejoignez-nous !</a>
+    </div>
+</section>
+
+<style>
+    /* Section Identité Styling */
+    .identity-section {
+        padding: 60px 0;
+    }
+    .identity-section h2, .identity-section h3 {
+        line-height: 1.4; /* Espace entre les lignes */
+    }
+    .identity-section p, .identity-section ul {
+        line-height: 1.6; /* Espace entre les lignes */
+    }
+    /* Bouton Action */
+    .btn-success {
+        background-color: #4CAF50; /* Vert écologique */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px; /* Coins arrondis */
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease;
+    }
+    .btn-success:hover {
+        background-color: #388E3C; /* Couleur plus foncée au survol */
+    }
+</style>
+
+
+<!-- Section Principales Actions -->
+<section class="actions-section section-bg py-5">
+    <div class="container text-center">
+        <h2 class="text-white mb-4">Nos Actions</h2>
+        <p class="text-white mb-4">
+            Nous mettons en œuvre diverses initiatives pour améliorer la vie étudiante, telles que des ateliers, des forums de discussion et des campagnes de sensibilisation.
+        </p>
+        <!-- Image en avant -->
+        <div class="mb-4">
+            <img src="./Asset/Femme d'affaires travaillant _ Photo Premium.jpeg" alt="Actions de la FNEB" class="img-fluid rounded">
+        </div>
+        <!-- Grille des Actions -->
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="action-item text-white p-3 bg-primary rounded">
+                    <h4>Ateliers de Formation</h4>
+                    <p>Des sessions de formation pour développer les compétences des étudiants.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="action-item text-white p-3 bg-primary rounded">
+                    <h4>Forums de Discussion</h4>
+                    <p>Espaces pour échanger sur des sujets d'actualité et partager des idées.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="action-item text-white p-3 bg-primary rounded">
+                    <h4>Campagnes de Sensibilisation</h4>
+                    <p>Actions pour sensibiliser les étudiants aux enjeux sociaux et environnementaux.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Section Principales Actions Styling */
+    .actions-section {
+        padding: 60px 0;
+    }
+    .action-item {
+        background-color: #001f3f; /* Variante de bleu nuit */
+        transition: transform 0.3s ease;
+    }
+    .action-item:hover {
+        transform: translateY(-5px); /* Légère élévation au survol */
+    }
+    /* Image Styling */
+    .actions-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px; /* Coins arrondis pour l'image */
+    }
+</style>
+
+<!-- Section Événements à Venir -->
+<section class="events-section section-bg py-5">
+    <div class="container text-center">
+        <h2 class="text-white mb-4">Événements à Venir</h2>
+        <p class="text-white mb-4">
+            Participez à nos événements passionnants et engageants pour les étudiants.
+        </p>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="event-card p-3 rounded">
+                    <h4>Forum des Étudiants</h4>
+                    <p>Date : 15 Octobre 2024</p>
+                    <p>Un espace pour discuter des enjeux étudiantes actuels.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="event-card p-3 rounded">
+                    <h4>Atelier de Développement Personnel</h4>
+                    <p>Date : 22 Octobre 2024</p>
+                    <p>Renforcez vos compétences avec nos experts.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="event-card p-3 rounded">
+                    <h4>Célébration de la Semaine des Étudiants</h4>
+                    <p>Date : 29 Octobre 2024</p>
+                    <p>Un événement festif pour célébrer l'esprit étudiant.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Section Événements Styling */
+    .events-section {
+        background-color: #003366; /* Variante de bleu marine */
+        padding: 60px 0;
+    }
+    .event-card {
+        background-color: #00509E; /* Bleu vif pour les cartes */
+        color: white;
+        transition: transform 0.3s ease;
+    }
+    .event-card:hover {
+        transform: translateY(-5px); /* Légère élévation au survol */
+    }
+</style>
+
+
+<!-- Section Actualités -->
+<section class="news-section section-bg py-5">
+    <div class="container text-center">
+        <h2 class="text-white mb-4">Actualités</h2>
+        <p class="text-white mb-4">
+            Restez informés des dernières nouvelles et des mises à jour de la FNEB.
+        </p>
+        <!-- Image en avant -->
+        <div class="mb-4">
+            <img src="./Asset/young-man-reading-newspaper-home-while-having-coffee.jpg" alt="Actualités de la FNEB" class="img-fluid rounded">
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="news-item text-white p-3 bg-dark rounded">
+                    <h4>Nouvelle Campagne de Sensibilisation</h4>
+                    <p>Nous lançons une nouvelle campagne pour promouvoir le recyclage parmi les étudiants.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="news-item text-white p-3 bg-dark rounded">
+                    <h4>Atelier de Leadership</h4>
+                    <p>Participez à notre atelier de leadership pour développer vos compétences personnelles.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="news-item text-white p-3 bg-dark rounded">
+                    <h4>Rencontre avec les Anciens</h4>
+                    <p>Un événement pour connecter les étudiants avec des anciens élèves de la FNEB.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Section Actualités Styling */
+    .news-section {
+        padding: 60px 0;
+    }
+    .news-item {
+        background-color: #002d57; /* Une nuance de bleu nuit */
+    }
+</style>
+
+
+<!-- Section Événements -->
+<section class="events-section section-bg py-5">
+    <div class="container text-center">
+        <h2 class="text-white mb-4">Événements à Venir</h2>
+        <p class="text-white mb-4">
+            Découvrez nos prochains événements et participez à la vie de la FNEB.
+        </p>
+        <!-- Image en avant -->
+        <div class="mb-4">
+            <img src="./Asset/diverse-people-clubbing-dancing-together-discotheque-party-event-nightclub-young-friends-holding-hands-singing-relaxing-crowded-dancefloor-social-gathering.jpg" alt="Événements de la FNEB" class="img-fluid rounded">
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="event-item text-white p-3 bg-primary rounded">
+                    <h4>Conférence sur l'Éducation</h4>
+                    <p>Une conférence sur l'importance de l'éducation dans le développement personnel.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="event-item text-white p-3 bg-primary rounded">
+                    <h4>Marche pour le Climat</h4>
+                    <p>Joignez-vous à nous pour une marche en faveur de la protection de l'environnement.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="event-item text-white p-3 bg-primary rounded">
+                    <h4>Festival de la Culture Étudiante</h4>
+                    <p>Un événement festif pour célébrer la diversité culturelle des étudiants.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Section Événements Styling */
+    .events-section {
+        padding: 60px 0;
+    }
+    .event-item {
+        background-color: #004d7a; /* Autre nuance de bleu nuit */
+    }
+</style>
+
+<!-- Section Témoignages -->
+<section class="testimonials-section section-bg py-5">
+    <div class="container text-center">
+        <h2 class="text-white mb-4">Témoignages</h2>
+        <p class="text-white mb-4">
+            Découvrez les expériences de nos membres et comment la FNEB a impacté leur parcours.
+        </p>
+        <!-- Image en avant -->
+        <div class="mb-4">
+            <img src="testimonials-image.jpg" alt="Témoignages de la FNEB" class="img-fluid rounded">
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="testimonial-item text-dark p-4 bg-light rounded">
+                    <p class="mb-3">"La FNEB m'a donné une voix et m'a aidé à défendre mes droits en tant qu'étudiant."</p>
+                    <h5>– Aissatou, Étudiante en Droit</h5>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="testimonial-item text-dark p-4 bg-light rounded">
+                    <p class="mb-3">"Participer aux événements de la FNEB m'a permis de me connecter avec des personnes partageant les mêmes idées."</p>
+                    <h5>– Serge, Étudiant en Sciences Sociales</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Section Témoignages Styling */
+    .testimonials-section {
+        padding: 60px 0;
+        background-color: #00264d; /* Un bleu plus foncé pour le fond */
+    }
+    .testimonial-item {
+        border: 1px solid #004080; /* Bordure pour les témoignages */
+    }
+</style>
+
+
+<!-- Section Ressources -->
+<section class="resources-section section-bg py-5">
+    <div class="container text-center">
+        <h2 class="text-white mb-4">Ressources</h2>
+        <p class="text-white mb-4">
+            Accédez à des documents et des ressources utiles pour votre parcours académique.
+        </p>
+        <!-- Image en avant -->
+        <div class="mb-4">
+            <img src="./Asset/study-group-learning-library.jpg" alt="Ressources de la FNEB" class="img-fluid rounded">
+        </div>
+        <div class="resource-content text-white">
+            <h4>Documents Importants :</h4>
+            <ul class="list-unstyled">
+                <li>• Règlement intérieur de la FNEB</li>
+                <li>• Guide de l'étudiant</li>
+                <li>• Modèles de lettres administratives</li>
+                <li>• Calendrier académique</li>
+            </ul>
+            <a href="#" class="btn btn-success">Téléchargez ici</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Section Ressources Styling */
+    .resources-section {
+        padding: 60px 0;
+        background-color: rgb(3, 64, 120); /* Couleur de fond section */
+    }
+    .resources-section h4 {
+        margin-top: 20px; /* Espace entre le titre et le contenu */
+    }
+    .resources-section ul {
+        list-style-type: none; /* Supprime les puces */
+        padding: 0; /* Supprime le padding */
+    }
+    .resources-section li {
+        margin-bottom: 10px; /* Espace entre les lignes de la liste */
+    }
+    /* Bouton Action */
+    .btn-success {
+        background-color: #4CAF50; /* Vert écologique */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px; /* Coins arrondis */
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease;
+    }
+    .btn-success:hover {
+        background-color: #388E3C; /* Couleur plus foncée au survol */
+    }
+</style>
+
+<!-- Section Contact -->
+<section class="contact-section section-bg py-5">
+    <div class="container text-center">
+        <h2 class="text-white mb-4">Contactez-nous</h2>
+        <p class="text-white mb-4">
+            Nous sommes là pour vous aider. N'hésitez pas à nous contacter pour toute question ou besoin d'information.
+        </p>
+        <!-- Image en avant -->
+        <div class="mb-4">
+            <img src="./Asset/close-up-portrait-attractive-young-woman-isolated.jpg" alt="Contact de la FNEB" class="img-fluid rounded">
+        </div>
+        <div class="contact-content text-white">
+            <h4>Nos Coordonnées :</h4>
+            <p>Email : contact@fneb.bj</p>
+            <p>Téléphone : +229 66 05 66 94</p>
+            <p>Adresse : Université d'Abomey-Calavi, Batiment Radio Univers, Bénin</p>
+            <a href="renatotchobo0@gmail.com" class="btn btn-success">Envoyez un Message</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Section Contact Styling */
+    .contact-section {
+        padding: 60px 0;
+        background-color: rgb(3, 64, 120); /* Couleur de fond section */
+    }
+    .contact-section h4 {
+        margin-top: 20px; /* Espace entre le titre et le contenu */
+    }
+    /* Les styles pour les paragraphes et le bouton sont les mêmes que pour la section Ressources */
+</style>
+
+
+<!-- Footer -->
+<footer class="footer section-bg py-4">
+    <div class="container text-center">
+        <div class="footer-content text-white">
+            <h4>Contactez-nous</h4>
+            <p>Email : contact@fneb.bj</p>
+            <p>Téléphone : +229 66 05 66 94</p>
+            <p>Adresse : Université d'Abomey-Calavi, Batiment Radio Univers, énin</p>
+            <div class="social-links mb-3">
+                <a href="#" class="text-white mx-2">Facebook</a>
+                <a href="#" class="text-white mx-2">Twitter</a>
+                <a href="#" class="text-white mx-2">Instagram</a>
+                <a href="#" class="text-white mx-2">LinkedIn</a>
+            </div>
+            <p>&copy; 2024 Fédération Nationale des Étudiants du Bénin. Tous droits réservés.</p>
+            <p><a href="#" class="text-white">Mentions légales</a></p>
+        </div>
+    </div>
+</footer>
+
+<style>
+    /* Footer Styling */
+    .footer {
+        background-color: #001f3f; /* Couleur bleu nuit */
+    }
+    .footer a {
+        text-decoration: none; /* Pas de soulignement */
+    }
+    .footer a:hover {
+        text-decoration: underline; /* Soulignement au survol */
+    }
+    .footer-content {
+        padding: 20px; /* Espace autour du contenu */
+    }
+</style>
+
+
+<!-- Bouton WhatsApp -->
+<a href="https://wa.me/+22966056694" class="whatsapp-button" target="_blank" title="Cliquez pour discuter sur WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+</a>
+
+<style>
+    /* Styles pour le bouton WhatsApp */
+    .whatsapp-button {
+        position: fixed;
+        bottom: 20px; /* Distance du bas de la page */
+        right: 20px; /* Distance du côté droit de la page */
+        background-color: #25D366; /* Couleur de fond WhatsApp */
+        border-radius: 50%; /* Coins arrondis pour un bouton circulaire */
+        padding: 15px; /* Espace interne */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Ombre */
+        z-index: 1000; /* Assure que le bouton soit au-dessus des autres éléments */
+        transition: transform 0.3s ease;
+    }
+    .whatsapp-button:hover {
+        transform: scale(1.1); /* Effet d'agrandissement au survol */
+    }
+    .whatsapp-icon {
+        width: 40px; /* Taille de l'icône */
+        height: 40px; /* Taille de l'icône */
+    }
+</style>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
